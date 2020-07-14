@@ -1,0 +1,20 @@
+As much as i know there are six types of data types.
+Which are -
+1. string
+2.Number
+3.boolean 
+4.Array
+5.Object
+6.Function
+
+
+String - type is used to represent textual data
+example- var a = 'Hi there!';
+
+Number - type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential notation 
+example- var a = 25; 
+
+Boolean-  type can hold only two values: true or false
+example- var isReading = true;
+
+There are many more data type also.

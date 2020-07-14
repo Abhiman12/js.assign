@@ -1,0 +1,32 @@
+console.log()
+
+Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.
+ Syntax- 
+  console.log('abc');
+
+
+console.error()
+
+Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.
+Syntax- 
+console.error('This is a simple error');
+
+
+console.warn()
+
+Used to log warning message to the console. By default the warning message will be highlighted with yellow color.
+Syntax-
+ console.warn('This is a warning.'); 
+
+
+console.clear()
+Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned.
+ Syntax-
+  console.clear(); 
+
+
+There are many more uses of console tag like
+•	time() and timeEnd()
+•	table()
+•	count()
+•	group() and groupEnd()

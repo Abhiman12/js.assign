@@ -1,0 +1,34 @@
+Var
+
+The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable.
+var a =10;
+  console.log(a);              // output 10
+  if(true){
+   var a=20;
+   console.log(a);            // output 20
+  }
+  console.log(a);             // output 20
+}
+
+
+let
+
+The let statement declares a local variable in a block scope. It is similar to var, in that we can optionally initialize the variable.
+{
+  let a =10;
+  console.log(a);  // output 10
+  if(true){
+   let a=20;
+   console.log(a); // output 20
+  }
+  console.log(a);  // output 10
+}
+
+
+const
+
+const statement values can be assigned once and they cannot be reassigned. The scope of const statement works similar to let statements.
+{
+  const MY_VARIABLE =10;
+  console.log(MY_VARIABLE);  //output 10 
+}
