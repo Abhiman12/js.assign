@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Question7
+        </title>
+    </head>
+    <body>
+        <script>
+            var num = prompt("enter amy no.");
+       for (var prime = 0; prime <= num; prime++) {
+
+var notPrime = false;
+for (var i = 2; i <= prime; i++) {
+    if (prime%i===0 && i!==prime) {
+        notPrime = true;
+    }
+}
+if (notPrime === false) {
+            console.log(prime);
+}
+}    
+        </script>
+    </body>
+</html>

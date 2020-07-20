@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            Question4
+        </title>
+    </head>
+<body>
+ <h3>Enter first no. or Square Root no. </h3>   <input type="text" id="n1"/><br/><br/>
+  <h3>Enter Second no. or Percentage Value</h3>      <input type="text" id="n2"/><br/><br/>
+        
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+            <option value="%">%</option>
+            <option value="Sroot">Sroot</option>
+        </select>
+        
+        <button onclick="calc();">=</button>
+        <input type="text" id="result"/>
+<script>
+function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+                if (oper === '%')
+                {
+                    document.getElementById('result').value = (n1/100)*n2;
+                }
+                if (oper === 'Sroot')
+                {
+                    document.getElementById('result').value = Math.sqrt(n1);
+                }
+            }
+
+
+</script>
+</body>
+    </html>

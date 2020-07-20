@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Question5
+        </title>
+    </head>
+    <body>
+        <script>
+         var amount= prompt("Enter sales");
+         var percent = 0.0;
+         if (amount <= 5000){
+            percent = .02; 
+        }
+        else if (amount > 5000 && amount <= 10000) {
+            percent = .05;
+        }
+        else if (amount >10000 && amount <= 20000){
+            percent = .07;
+        }
+        else if (amount > 20000) {
+            percent = .1;
+        }
+console.log  ("Total Commission Earned " + amount*percent);
+        </script>
+    </body>
+</html>
