@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Table of a number Given by the user.</title>
+		<script type="text/javascript">
+			function printTable(){
+				var num;
+				num=Number(document.getElementById('txtNumber').value);
+				for(var i=1; i<=10; i++){
+					var pTag= document.getElementById('pPrint');
+					pTag.innerHTML += num + " * " + i  
+                             + " = " + num * i + "<br/>" 
+				}
+			}
+		</script>
+	</head>
+
+	<body style="text-align: center;">
+		<h1>Table of a number Given by the user.</h1>
+		<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+		<p><input type="button" value="Print Table." onclick='printTable()'/>
+		<!--print numbers-->
+		<p id="pPrint"></p>
+	</body>
+
+</html>

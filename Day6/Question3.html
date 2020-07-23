@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Question3
+        </title>
+    </head>
+    <body>
+        <h2 id = "title">
+        </h2> <br>
+        <br><br>
+        <br>
+        <h4 id = "time">
+        </h4>
+        <br>
+        <br><br>
+        <br>
+        <button id = "dark"> Switch to Dark mode
+        </button>
+        
+        <script>
+            const name = prompt("Enter Your Name") ;
+            title.innerText += "Welcome To The Website        " + name ;
+            const ctime = document.getElementById('time');
+
+
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    ctime.innerText = time;
+}
+setInterval(clock,1000);
+clock();
+            const dmode = document.getElementById ("dark");
+            dmode.onclick =
+            function changeColor(){
+                  
+                      document.body.style.backgroundColor='Black';
+                      document.body.style.color = 'white';
+                 
+              }
+              changeColor();
+        </script>
+    </body>
+</html>

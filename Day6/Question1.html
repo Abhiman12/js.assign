@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Question1
+        </title>
+    </head>
+    <body onload="start()">
+    <script>
+        var c = ["blue", "black", "yellow", "red"];
+      
+        function changeColor() {
+          setTimeout(function loop() {
+            document.bgColor = c.shift();
+            if (c.length) {
+              setTimeout(loop, 5000);
+            }
+          }, 5000);
+        }
+      
+        function start() {
+          setInterval(changeColor(), 20000);
+        }
+      </script>
+      
+      
+      </body>
+</html>
